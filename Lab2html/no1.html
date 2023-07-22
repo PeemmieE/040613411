@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid silver;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table {
+            border-spacing: 30px;
+        }
+        .next{
+            border-right:2px solid black;
+            border-left:2px solid black;
+        }
+    
+    </style>
+</head>
+<body>
+        <table cellpadding="10px">
+            <tr>
+                <th></th>
+                <th>ตัวอย่างข้อมูล</th>
+                <th>input type?</th>
+            </tr>
+            <tr>
+                <th>1.</th>
+                <th>ชื่อเต็ม/ย่อของสาขาวิชา</th>
+                <th>
+                    <input type="text" pattern="[0-9]{2}">
+                </th>
+            </tr>
+            <tr>
+                <th>2.</th>
+                <th>จำนวนเงินที่จะโอน</th>
+                <th>
+                    <input type="number">
+                </th>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <th>อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</th>
+                <th>
+                    <textarea cols="25" rows="5" type="text" ></textarea>
+                </th>
+            </tr>
+            <tr>
+                <th>4.</th>
+                <th>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</th>
+                <th>
+                    <input  type="number">
+                </th>
+            </tr>
+            <tr>
+                <th>5.</th>
+                <th>รหัสบัตรประชาชน</th>
+                <th>
+                    <input  type="number">
+                </th>
+            </tr>
+            <tr>
+                <th>6.</th>
+                <th>ความพึงพอใจของหนังสือเล่มนี้</th>
+                <th>
+                    <input type="radio" name="test1" value="a1" checked="checked"  /><label>5</label>
+                    <input type="radio" name="test1" value="a2"  /> <label>4</label>
+                    <input type="radio" name="test1" value="a3"  /> <label>3</label>
+                    <input type="radio" name="test1" value="a4"  /> <label>2</label>
+                    <input type="radio" name="test1" value="a5"  /> <label>1</label>
+                </th>
+            </tr>
+            <tr>
+                <th>7.</th>
+                <th>อาการป่วย</th>
+                <th>
+                    <input  type="text">
+                </th>
+            </tr>
+            <tr>
+                <th>8.</th>
+                <th>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</th>
+                <th>
+                    <input type="radio" name="nn"  checked="checked" > ได้รับ
+                    <input type="radio" name="nn"   > ไม่ได้ระบ
+                </th>
+            </tr>
+            <tr>
+                <th>9.</th>
+                <th>รหัสผ่าน</th>
+                <th>
+                    <input  type="password">
+                </th>
+            </tr>
+            <tr>
+                <th>10.</th>
+                <th>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</th>
+                <th>
+                    <input type="time">Start<p>
+                    <input type="time">End
+                </th>
+            </tr>
+            <tr>
+                <th>11.</th>
+                <th>วันเวลาที่ต้องไปพบแพทย์</th>
+                <th>
+                    <input type="datetime-local"><p>
+                </th>
+            </tr>
+
+
+
+
+        </table>
+    
+</body>
+</html>
