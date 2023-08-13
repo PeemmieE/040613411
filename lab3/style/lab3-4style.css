@@ -1,0 +1,6 @@
+.test1:hover{
+    background-color: aqua;
+}
+table,tr,th{
+    border: 1px solid black;
+}
