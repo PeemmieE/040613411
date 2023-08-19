@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            let num1 = document.getElementById("i1").value
+            let num2 = document.getElementById("i2").value
+            let opp = document.getElementById("op").value
+            let valuee
+            if(opp=="plus"){
+                valuee = parseFloat(num1)  + parseFloat(num2)
+            }else if(opp=="min"){
+                valuee = parseFloat(num1)  - parseFloat(num2)
+            }else if(opp=="mul"){
+                valuee = parseFloat(num1)  * parseFloat(num2)
+            }else if(opp=="divine"){
+                valuee = parseFloat(num1)  / parseFloat(num2)
+            }
+            console.log(valuee)
+            let num3 = document.getElementById("ans")
+            
+            num3.value = valuee
+        }
+    </script>
+</head>
+<body>
+    <input id="i1" type="number">
+    <select id="op">
+        <option value="plus">+</option>
+        <option value="min">-</option>
+        <option value="mul">*</option>
+        <option value="divine">/</option>
+      </select>
+    <input id="i2" type="number">=
+    <input type="text" id="ans" readonly>
+    <button onclick="cal()">Go Go</button>
+    
+</body>
+</html>

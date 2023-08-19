@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student = [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใส่ใจ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            }
+            ]
+            let i
+            for(i=0;i<student.length;i++){
+                console.log("\nชั้นปีที่ "+student[i].year+"\n")
+                if(student[i].gpa>=3.20){
+                    
+                    
+                    if(student[i].help){
+                        console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+                        // console.log("และยังช่วยงานภาควิชาด้วย")
+                    }else{
+                        console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์")
+                    }
+                    // console.log("\n")
+                }else{
+                    if(student[i].year>=2){
+                        if(student[i].gpa>=2.75){
+                            if(student[i].help){
+                                
+                                console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย\n")
+                            }else{
+                                console.log("ไม่มี\n")
+                            }
+                        }else{
+                            console.log("ไม่มี\n")
+                        }
+                    }else{
+                        console.log("ไม่มี\n")
+                    }
+                }
+            }
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

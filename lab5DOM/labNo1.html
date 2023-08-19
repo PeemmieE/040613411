@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+            let num1 = document.getElementById("i1").value
+            let num2 = document.getElementById("i2").value
+            let num3 = document.getElementById("ans")
+            let valuee = parseInt(num1)  + parseInt(num2)
+            // console.log(valuee)
+            num3.value = valuee
+        }
+        // window.onload = function(){
+        //     let test = document.getElementById("Click")
+        //     test.onclick = cal
+        // }
+    </script>
+</head>
+<body>
+    <input id="i1" type="number">+
+    <input id="i2" type="number">=
+    <input type="text" id="ans" readonly>
+    <button id="Click" onclick="cal()">Go Go</button>
+    
+</body>
+</html>

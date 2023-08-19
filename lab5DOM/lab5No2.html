@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        function test1(){
+            let getname = document.getElementById("name")
+            getname.style.color="green"
+        }
+        function test2(){
+            let getage = document.getElementById("age")
+            getage.style.color="green"
+        }
+        function test3(){
+            let getbirth = document.getElementById("birth")
+            getbirth.style.color="green"
+        }
+    </script>
+</head>
+<body>
+    Name: <input type="text" onblur="test1()" id="name"><br>
+    Age: <input type="text" onblur="test2()" id="age"><br>
+    Birthdate: <input type="text" onblur="test3()" id="birth">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function CountThe(str){
+            let i,count=0
+            for(i=0;i<str.length;i++){
+                if(str[i]=='T'||str[i]=='t'){
+                    if(str[i+1]=='H'||str[i+1]=='h'){
+                        if(str[i+2]=='E'||str[i+2]=='e'){
+                            count++
+                        }
+                    }
+                }
+            }
+            console.log(count)
+            alert("มี The ทั้งหมด "+count+" คำ")
+        }
+    </script>
+</head>
+<body>
+    The eigth ruler of the Fifth Dynastry in the late 25th century<br><br>
+    <a href="#" onclick="CountThe('The eigth ruler of the Fifth Dynastry in the late 25th century')">Click for count 'the'</a>
+</body>
+</html>

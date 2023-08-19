@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let textname = document.getElementById("name")
+            let textadd = document.getElementById("address")
+            let textphone = document.getElementById("phone")
+
+
+            let getname = textname.value
+            let getadd = textadd.value
+            let getphone = textphone.value
+            // let getspace = 
+            
+            let firsttable = document.createElement("tr")
+            let tableadd0 = document.getElementById("tb")
+            tableadd0.appendChild(firsttable)
+
+            let thCreate1 = document.createElement("th")
+            thCreate1.innerHTML = getname
+            let tableadd1 = document.getElementById("tb")
+            tableadd1.appendChild(thCreate1)
+
+            let thCreate2 = document.createElement("th")
+            thCreate2.innerHTML = getadd
+            let tableadd2 = document.getElementById("tb")
+            tableadd2.appendChild(thCreate2)
+            
+            let thCreate3 = document.createElement("th")
+            thCreate3.innerHTML = getphone
+            let tableadd3 = document.getElementById("tb")
+            tableadd3.appendChild(thCreate3)
+
+
+            // var br = document.createElement("br");
+            // element.appendChild(br);
+        }
+    </script>
+
+</head>
+<body>
+    ชื่อลูกค้า :<input type="text" id="name"><br>
+    ที่อยู่ : <input type="text" id="address"><br>
+    โทรศัพท์ : <input type="text" id="phone"><br>
+    <input type="button" value="เพิ่ม" onclick="add()"><br><br>
+    <table border="1" id="tb">
+        <th>ชื่อลูกค้า</th>
+        <th>ที่อยู่</th>
+        <th>โทรศัพท์</th>
+    </table>
+</body>
+</html>
