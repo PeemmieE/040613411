@@ -28,17 +28,17 @@
                 help: true
             }
             ]
-            let i
+            let i,j
+
             for(i=0;i<student.length;i++){
-                console.log("\nชั้นปีที่ "+student[i].year+"\n")
                 if(student[i].gpa>=3.20){
                     
-                    
+                    console.log()
                     if(student[i].help){
-                        console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+                        console.log(student[i].fullname+" เกิดเมื่อปี "+(2564-student[i].age)+" ได้รับทุนการศึกษา"+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
                         // console.log("และยังช่วยงานภาควิชาด้วย")
                     }else{
-                        console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์")
+                        console.log(student[i].fullname+" เกิดเมื่อปี "+(2564-student[i].age)+" ได้รับทุนการศึกษา"+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์")
                     }
                     // console.log("\n")
                 }else{
@@ -46,15 +46,44 @@
                         if(student[i].gpa>=2.75){
                             if(student[i].help){
                                 
-                                console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย\n")
+                                console.log(student[i].fullname+" เกิดเมื่อปี "+(2564-student[i].age)+" ได้รับทุนการศึกษา"+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+                            }else{
+                                console.log(student[i].fullname+" เกิดเมื่อปี "+(2564-student[i].age)+" ไม่ได้รับทุนการศึกษา"+" เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์และไม่ได้ช่วยงานภาควิชา")
+                            }
+                        }else{
+                            console.log(student[i].fullname+" เกิดเมื่อปี "+(2564-student[i].age)+" ไม่ได้รับทุนการศึกษา"+" เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์และไม่ได้ช่วยงานภาควิชา")
+                        }
+                    }else{
+                        // console.log("ไม่มี\n")
+                    }
+                }
+            }
+            for(j=1;j<=3;j++){
+                for(i=0;i<student.length;i++){
+                    if(student[i].year==j){
+                        console.log("\nชั้นปีที่ "+student[i].year+"\n")
+                        if(student[i].gpa>=3.20){
+                            if(student[i].help){
+                            console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+                        }else{
+                            console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์")
+                        }
+                        }else{
+                        if(student[i].year>=2){
+                            if(student[i].gpa>=2.75){
+                                if(student[i].help){
+                                
+                                    console.log(student[i].fullname+" เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย\n")
+                                }else{
+                                    console.log("ไม่มี\n")
+                                }
                             }else{
                                 console.log("ไม่มี\n")
                             }
                         }else{
                             console.log("ไม่มี\n")
                         }
-                    }else{
-                        console.log("ไม่มี\n")
+                        }
                     }
                 }
             }
