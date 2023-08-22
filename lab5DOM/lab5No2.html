@@ -9,15 +9,29 @@
     <script>
         function test1(){
             let getname = document.getElementById("name")
-            getname.style.color="green"
+            
+            if(getname.value){
+                getname.style.color="green"
+            }else{
+                getname.style.color="black"
+            }
         }
         function test2(){
             let getage = document.getElementById("age")
-            getage.style.color="green"
+            if(getage.value){
+                getage.style.color="green"
+            }else{
+                getage.style.color="black"
+            }
         }
         function test3(){
             let getbirth = document.getElementById("birth")
-            getbirth.style.color="green"
+            
+            if(getbirth.value){
+                getbirth.style.color="green"
+            }else{
+                getbirth.style.color="black"
+            }
         }
     </script>
 </head>
