@@ -60,4 +60,4 @@ WHERE student.std_id = '5001100348';
 SELECT register.std_id,SUM(course.credit)
 FROM register
 JOIN course ON register.course_id = course.course_id
-GROUP BY register.std_id
+GROUP BY register.std_id;
