@@ -23,6 +23,6 @@
   // กรณี username และ password ไม่ตรงกัน
   } else {
     echo "ไม่สำเร็จ ชื่อหรือรหัสผ่านไม่ถูกต้อง";
-    echo "<a href='login-form.php'>เข้าสู่ระบบอีกครัง</a>"; 
+    echo "<a href='login-form.php'>เข้าสู่ระบบอีกครั้ง</a>"; 
   }
 ?>
